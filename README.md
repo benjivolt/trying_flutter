@@ -1,16 +1,20 @@
-# skillmax
+# SkillMax
 
-A new Flutter project.
+An early Flutter prototype of a calisthenics skill-training app. It signs users in with Firebase Auth, stores progress in Cloud Firestore and handles subscriptions through RevenueCat. State is managed with Riverpod.
 
-## Getting Started
+## Run it
 
-This project is a starting point for a Flutter application.
+You need the Flutter SDK (Dart 3.10 or later) and a Firebase project. Generate `lib/firebase_options.dart` for your own project with the FlutterFire CLI, then:
 
-A few resources to get you started if this is your first Flutter project:
+```
+flutter pub get
+flutter run
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Layout
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+lib/main.dart          app entry point and Firebase setup
+lib/views/             screens
+lib/controllers/       subscription logic
+```
